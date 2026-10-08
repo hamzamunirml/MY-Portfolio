@@ -1,0 +1,65 @@
+[
+  {
+    "id": "exp-softcr8ors",
+    "role": "AI/ML Engineer — ML Internship",
+    "company": "SoftCr8ors",
+    "period": "June 2026 – Aug 2026 (3 Months)",
+    "location": "Punjab, Pakistan (Remote)",
+    "type": "Internship",
+    "description": "Built an AI Business Website Analyzer & Client Readiness Scorer — a full end-to-end ML pipeline with a Streamlit frontend that evaluates business website readiness for clients — and an AI Marketing Automation Agent.",
+    "achievements": [
+      "Designed and implemented the complete ML workflow — data preprocessing, model training, and deployment — with verified end-to-end predictions.",
+      "Resolved label-noise and feature engineering issues to reach ~79% cross-validated accuracy.",
+      "Built an AI Marketing Automation Agent: a 9-module Streamlit app, extended into a React Flow + FastAPI visual workflow builder and a SaaS-style marketing site.",
+      "Collaborated with the engineering team to deliver a production-ready, client-facing tool."
+    ],
+    "techUsed": [
+      "Python",
+      "Scikit-Learn",
+      "FastAPI",
+      "Streamlit",
+      "Web Scraping",
+      "React Flow"
+    ]
+  },
+  {
+    "id": "exp-innoverse",
+    "role": "AI/ML Engineer — AI Fusion Internship",
+    "company": "Innoverse",
+    "period": "18 Apr 2026 – 31 May 2026 (6 Weeks)",
+    "location": "Punjab, Pakistan (Remote)",
+    "type": "Internship",
+    "description": "Worked on applied AI/ML projects during a 6-week intensive internship, gaining hands-on experience across the full machine learning pipeline from data preparation to model deployment.",
+    "achievements": [
+      "Applied Python, TensorFlow/PyTorch, and Scikit-learn to build and evaluate ML models under real project constraints and deadlines.",
+      "Collaborated with mentors and peers, strengthening problem-solving, technical communication, and production-oriented development skills."
+    ],
+    "techUsed": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "Scikit-Learn"
+    ]
+  },
+  {
+    "id": "exp-semester-projects",
+    "role": "Academic & Semester Projects",
+    "company": "KFUEIT — BS Artificial Intelligence",
+    "period": "2023 – Present",
+    "location": "Punjab, Pakistan",
+    "type": "Coursework",
+    "description": "Coursework-driven AI/ML projects spanning Speech Processing, Parallel & Distributed Computing, and foundational machine learning, built alongside the core degree program.",
+    "achievements": [
+      "Built a dysarthric speech detection and speech-to-text summarization system using HMMs and MaxEnt models on the TORGO dataset for a Speech Processing course.",
+      "Explored parallel and distributed computing concepts applied to ML workloads.",
+      "Delivered foundational ML projects (Titanic Survival Prediction, Auto-MPG Prediction) as part of core coursework."
+    ],
+    "techUsed": [
+      "Python",
+      "HMMs",
+      "MaxEnt",
+      "Scikit-Learn",
+      "Jupyter"
+    ]
+  }
+]

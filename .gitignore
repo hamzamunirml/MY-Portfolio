@@ -1,0 +1,20 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Vite / editor artifacts
+.vite/
+.vscode/
+
+# Backend (Python/FastAPI)
+backend/__pycache__/
+backend/**/__pycache__/
+backend/*.db
+backend/venv/
+backend/.venv/
+*.pyc

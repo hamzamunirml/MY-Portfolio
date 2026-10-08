@@ -1,0 +1,449 @@
+[
+  {
+    "id": "brain-tumor-ai",
+    "title": "Brain Tumor AI",
+    "category": "Computer Vision",
+    "shortDescription": "End-to-end CT/MRI scan classifier and tumor detection pipeline using ResNet50, ConvNeXtTiny, EfficientNetV2B0 and a Custom CNN, wrapped in a multi-page Streamlit app.",
+    "fullDescription": "Built a full medical imaging pipeline that first classifies the scan type and then detects tumors on brain MRI/CT scans. Trained and compared ResNet50, ConvNeXtTiny, EfficientNetV2B0 and a Custom CNN on Kaggle, added Grad-CAM visual explainability, and packaged everything into a modular multi-page Streamlit application with a pytest test suite.",
+    "image": "/images/brain-tumor-ai.jpg",
+    "techStack": [
+      "Python",
+      "TensorFlow/Keras",
+      "ResNet50",
+      "ConvNeXtTiny",
+      "EfficientNetV2B0",
+      "Streamlit",
+      "Grad-CAM"
+    ],
+    "githubUrl": "https://github.com/hamzamunirml/Brain-Tumor-AI",
+    "liveUrl": null,
+    "metrics": [
+      {
+        "label": "Tumor Detection",
+        "value": "96.6% Acc"
+      },
+      {
+        "label": "Scan-Type AUC",
+        "value": "1.0"
+      },
+      {
+        "label": "Models Compared",
+        "value": "4"
+      }
+    ],
+    "architectureHighlights": [
+      "Two-stage pipeline: scan-type classification (ConvNeXtTiny) followed by tumor detection (ResNet50)",
+      "Grad-CAM heatmaps for visual model explainability on every prediction",
+      "Modular src/ architecture with a pytest test suite for reliability"
+    ],
+    "datasetInfo": "Kaggle Brain MRI/CT datasets, trained and validated separately for scan-type classification and tumor detection."
+  },
+  {
+    "id": "rag-document-qa",
+    "title": "AI Document QA (RAG) System",
+    "category": "GenAI/RAG",
+    "shortDescription": "A Retrieval-Augmented Generation app that lets you upload documents and ask questions, powered by LangChain, ChromaDB and Sentence Transformers with a Gemini/Groq LLM fallback.",
+    "fullDescription": "Built a document question-answering system using the RAG pattern: documents are chunked, embedded with Sentence Transformers, and stored in ChromaDB for semantic retrieval. Retrieved context is passed to Gemini or Groq (with automatic fallback) to generate grounded answers, deployed as a live Streamlit app.",
+    "image": "/images/rag-document-qa.jpg",
+    "techStack": [
+      "LangChain",
+      "ChromaDB",
+      "Sentence Transformers",
+      "Gemini API",
+      "Groq API",
+      "Streamlit",
+      "Python"
+    ],
+    "githubUrl": "https://github.com/hamzamunirml/AI-Document-Question-Answering-RAG",
+    "liveUrl": "https://ai-document-question-answering-rag-ofyz8k53feq4mjdjwg4rj3.streamlit.app/",
+    "metrics": [
+      {
+        "label": "Retrieval",
+        "value": "Vector Search"
+      },
+      {
+        "label": "LLM Fallback",
+        "value": "Gemini + Groq"
+      },
+      {
+        "label": "Vector Store",
+        "value": "ChromaDB"
+      }
+    ],
+    "architectureHighlights": [
+      "Document chunking and semantic embedding pipeline using Sentence Transformers",
+      "ChromaDB vector store for fast similarity-based document retrieval",
+      "Automatic fallback between Gemini and Groq APIs for reliable answer generation"
+    ],
+    "datasetInfo": "Works with user-uploaded PDF and text documents processed at query time."
+  },
+  {
+    "id": "business-website-analyzer",
+    "title": "AI Business Website Analyzer & Client Readiness Scorer",
+    "category": "Machine Learning",
+    "shortDescription": "An end-to-end ML tool that scrapes a business website, extracts features and scores how ready the business is to become a client, delivered through a Streamlit interface.",
+    "fullDescription": "Built during my SoftCr8ors ML internship: a complete pipeline that scrapes business websites, engineers features, trains a classifier and serves predictions in a client-facing Streamlit app. Fixed label-noise and feature-engineering issues along the way to reach roughly 79% cross-validated accuracy, and verified predictions end to end.",
+    "image": "/images/business-website-analyzer.jpg",
+    "techStack": [
+      "Python",
+      "Scikit-Learn",
+      "Web Scraping",
+      "FastAPI",
+      "Streamlit"
+    ],
+    "githubUrl": "",
+    "liveUrl": null,
+    "metrics": [
+      {
+        "label": "CV Accuracy",
+        "value": "~79%"
+      },
+      {
+        "label": "Approach",
+        "value": "Scraping + ML"
+      },
+      {
+        "label": "Interface",
+        "value": "Streamlit"
+      }
+    ],
+    "architectureHighlights": [
+      "Web scraping layer that turns raw website content into model-ready features",
+      "Resolved label noise and feature-engineering issues to lift cross-validated accuracy",
+      "Production-style, client-facing Streamlit tool built with the engineering team"
+    ],
+    "datasetInfo": "Business website data collected via scraping and labelled for client-readiness classification."
+  },
+  {
+    "id": "ai-social-content-generator",
+    "title": "AI Marketing & Social Media Content Generator",
+    "category": "GenAI/RAG",
+    "shortDescription": "A marketing automation agent that generates content, hashtags, a posting calendar, emails and image prompts — built as a 9-module Streamlit app and later as a React + FastAPI workflow builder.",
+    "fullDescription": "Built as a 2-day sprint project: an AI marketing automation tool with nine modules covering content generation, hashtag suggestions, content calendar planning, email drafting, image prompt generation, and export. Started as a Streamlit app, then rebuilt as a React + FastAPI visual workflow builder, and finally shaped into a SaaS-style marketing site frontend.",
+    "image": "/images/ai-social-content-generator.jpg",
+    "techStack": [
+      "React",
+      "FastAPI",
+      "Python",
+      "Gemini API",
+      "Groq API",
+      "Streamlit"
+    ],
+    "githubUrl": "https://github.com/hamzamunirml/AI-Powered-Social-Media-Content-Generator",
+    "liveUrl": "https://ai-powered-social-media-content-gen-five.vercel.app/",
+    "metrics": [
+      {
+        "label": "Modules",
+        "value": "9"
+      },
+      {
+        "label": "Frontend",
+        "value": "React + FastAPI"
+      },
+      {
+        "label": "Build Time",
+        "value": "2-Day Sprint"
+      }
+    ],
+    "architectureHighlights": [
+      "Nine functional modules: content generation, hashtags, calendar, email, image prompts, and export",
+      "Evolved from a Streamlit prototype into a React + FastAPI visual workflow builder",
+      "Final iteration shaped into a SaaS-style marketing site frontend"
+    ],
+    "datasetInfo": null
+  },
+  {
+    "id": "self-healing-pipeline",
+    "title": "Self-Healing Data Pipeline with Drift Detection",
+    "category": "MLOps",
+    "shortDescription": "My final year project: a policy-driven data pipeline that detects drift and anomalies, scores incident severity and safely auto-remediates with human approval and full audit trail.",
+    "fullDescription": "Final Year Project (applied research) at KFUEIT. The pipeline ingests CSV/REST batches, validates schema and data quality, detects drift (PSI, KS-test, Chi-square/Jensen-Shannon) and anomalies (Isolation Forest), classifies incidents, assigns a 0-1 severity score and matches them against a declarative YAML policy engine. Low-risk incidents are auto-remediated, high-risk ones need human approval, and every action is logged with rollback support.",
+    "image": "/images/self-healing-pipeline.jpg",
+    "techStack": [
+      "Python",
+      "FastAPI",
+      "Evidently AI",
+      "Isolation Forest",
+      "Streamlit",
+      "Docker",
+      "MLflow"
+    ],
+    "githubUrl": "",
+    "liveUrl": null,
+    "metrics": [
+      {
+        "label": "Drift Tests",
+        "value": "PSI / KS / Chi-sq"
+      },
+      {
+        "label": "Severity Score",
+        "value": "0 - 1"
+      },
+      {
+        "label": "Remediation",
+        "value": "Human-in-the-loop"
+      }
+    ],
+    "architectureHighlights": [
+      "Declarative YAML policy engine maps incidents to safe remediation actions",
+      "Business-aware severity scoring using drift magnitude, feature importance and impact",
+      "Human approval gate for high-risk fixes, with audit trail and rollback guarantees"
+    ],
+    "datasetInfo": "Tabular batch data ingested from CSV files and REST endpoints."
+  },
+  {
+    "id": "ai-email-assistant",
+    "title": "AI Email Assistant",
+    "category": "GenAI/RAG",
+    "shortDescription": "A multi-mode email generation assistant that drafts, rewrites and converts the tone of emails using Gemini/Groq, with PDF/TXT export, built with Streamlit.",
+    "fullDescription": "Built an AI-powered email writing assistant supporting multiple generation modes (compose, reply, rewrite) and tone conversion, backed by Gemini and Groq APIs with automatic fallback. Includes export to PDF and TXT so drafts can be reused outside the app, deployed live on Streamlit Cloud.",
+    "image": "/images/ai-email-assistant.jpg",
+    "techStack": [
+      "Python",
+      "Streamlit",
+      "Gemini API",
+      "Groq API"
+    ],
+    "githubUrl": "https://github.com/hamzamunirml/AI-Email-Assistant",
+    "liveUrl": "https://ai-email-assistant-duqdpslqsjyhwm5ka4jq8h.streamlit.app/",
+    "metrics": [
+      {
+        "label": "Modes",
+        "value": "Multi-Mode"
+      },
+      {
+        "label": "Export",
+        "value": "PDF / TXT"
+      },
+      {
+        "label": "LLM Fallback",
+        "value": "Gemini + Groq"
+      }
+    ],
+    "architectureHighlights": [
+      "Multiple generation modes: compose, reply, and tone conversion",
+      "Automatic fallback between Gemini and Groq APIs for reliability",
+      "One-click export of generated drafts to PDF and TXT"
+    ],
+    "datasetInfo": null
+  },
+  {
+    "id": "resume-ranking-ai",
+    "title": "Resume Ranking AI",
+    "category": "NLP",
+    "shortDescription": "A resume screening and candidate ranking app using TF-IDF vectorization with multi-job-description tab support, deployed on Streamlit Cloud.",
+    "fullDescription": "Built an NLP-based resume screening tool that ranks candidate resumes against job descriptions using TF-IDF vectorization and cosine similarity. Fixed a key vectorizer bug that raised match-score quality from 14% to 45%, and added support for comparing resumes against multiple job descriptions in separate tabs.",
+    "image": "/images/resume-ranking-ai.jpg",
+    "techStack": [
+      "Python",
+      "Scikit-Learn",
+      "TF-IDF",
+      "Streamlit"
+    ],
+    "githubUrl": "https://github.com/hamzamunirml/RESUME-RANKING-AI",
+    "liveUrl": null,
+    "metrics": [
+      {
+        "label": "Match Score Fix",
+        "value": "14% → 45%"
+      },
+      {
+        "label": "Multi-JD Support",
+        "value": "Yes"
+      },
+      {
+        "label": "Deployment",
+        "value": "Streamlit Cloud"
+      }
+    ],
+    "architectureHighlights": [
+      "TF-IDF + cosine similarity scoring engine for resume-to-JD matching",
+      "Diagnosed and fixed a vectorizer bug that was silently destroying match-score quality",
+      "Multi-job-description tab support for comparing one resume across several roles"
+    ],
+    "datasetInfo": null
+  },
+  {
+    "id": "small-model-distillation",
+    "title": "Small Model Distillation Pipeline",
+    "category": "NLP",
+    "shortDescription": "A knowledge distillation pipeline that compresses larger models into smaller, domain-specific student models for faster, cheaper inference.",
+    "fullDescription": "Built a pipeline for distilling knowledge from larger teacher models into smaller student models tailored to specific domains, aiming to cut inference cost and latency while retaining as much task accuracy as possible.",
+    "image": "/images/small-model-distillation.jpg",
+    "techStack": [
+      "Python",
+      "TensorFlow",
+      "Knowledge Distillation",
+      "Scikit-Learn"
+    ],
+    "githubUrl": "https://github.com/hamzamunirml/Small-Model-Distillation-Pipeline-for-domain-specific-tasks",
+    "liveUrl": null,
+    "metrics": [
+      {
+        "label": "Goal",
+        "value": "Faster Inference"
+      },
+      {
+        "label": "Approach",
+        "value": "Teacher-Student"
+      },
+      {
+        "label": "Focus",
+        "value": "Domain-Specific"
+      }
+    ],
+    "architectureHighlights": [
+      "Teacher-student distillation setup for domain-specific task compression",
+      "Focused on reducing model size and inference latency",
+      "Designed to be adaptable across different domain-specific NLP tasks"
+    ],
+    "datasetInfo": null
+  },
+  {
+    "id": "dysarthric-speech-detection",
+    "title": "Dysarthric Speech Detection & Summarization",
+    "category": "NLP",
+    "shortDescription": "A speech-processing system that detects dysarthric speech and converts speech to text with summarization, built with HMM and MaxEnt models on the TORGO dataset.",
+    "fullDescription": "Semester project for the Speech Processing course. Uses Hidden Markov Models and Maximum Entropy models on the TORGO dysarthric speech dataset to detect dysarthric speech and produce a speech-to-text summary.",
+    "image": "/images/dysarthric-speech-detection.jpg",
+    "techStack": [
+      "Python",
+      "HMM",
+      "MaxEnt",
+      "Jupyter",
+      "TORGO Dataset"
+    ],
+    "githubUrl": "",
+    "liveUrl": null,
+    "metrics": [
+      {
+        "label": "Dataset",
+        "value": "TORGO"
+      },
+      {
+        "label": "Models",
+        "value": "HMM + MaxEnt"
+      },
+      {
+        "label": "Output",
+        "value": "Speech-to-Text Summary"
+      }
+    ],
+    "architectureHighlights": [
+      "HMM-based acoustic modelling of dysarthric speech",
+      "MaxEnt classification for detection",
+      "Speech-to-text followed by summarization"
+    ],
+    "datasetInfo": "TORGO database of dysarthric articulation."
+  },
+  {
+    "id": "titanic-survival-prediction",
+    "title": "Titanic Survival Prediction",
+    "category": "Machine Learning",
+    "shortDescription": "A classic binary-classification project predicting passenger survival with feature engineering and Scikit-Learn models.",
+    "fullDescription": "Foundational ML coursework project: cleaned and engineered features from the Titanic dataset and trained classification models to predict passenger survival.",
+    "image": "/images/titanic-survival-prediction.jpg",
+    "techStack": [
+      "Python",
+      "Pandas",
+      "Scikit-Learn",
+      "Jupyter"
+    ],
+    "githubUrl": "",
+    "liveUrl": null,
+    "metrics": [
+      {
+        "label": "Task",
+        "value": "Classification"
+      },
+      {
+        "label": "Data",
+        "value": "Tabular"
+      },
+      {
+        "label": "Library",
+        "value": "Scikit-Learn"
+      }
+    ],
+    "architectureHighlights": [
+      "Data cleaning and missing-value handling",
+      "Feature engineering from passenger attributes",
+      "Model training and evaluation with Scikit-Learn"
+    ],
+    "datasetInfo": "Titanic passenger dataset."
+  },
+  {
+    "id": "auto-mpg-prediction",
+    "title": "Auto-MPG Fuel Efficiency Prediction",
+    "category": "Machine Learning",
+    "shortDescription": "A regression project predicting a car's fuel efficiency (MPG) from engine and weight features.",
+    "fullDescription": "Foundational ML coursework project: explored the Auto-MPG dataset and trained regression models to predict miles per gallon from vehicle features.",
+    "image": "/images/auto-mpg-prediction.jpg",
+    "techStack": [
+      "Python",
+      "Pandas",
+      "Scikit-Learn",
+      "Jupyter"
+    ],
+    "githubUrl": "",
+    "liveUrl": null,
+    "metrics": [
+      {
+        "label": "Task",
+        "value": "Regression"
+      },
+      {
+        "label": "Target",
+        "value": "MPG"
+      },
+      {
+        "label": "Library",
+        "value": "Scikit-Learn"
+      }
+    ],
+    "architectureHighlights": [
+      "Exploratory analysis of weight, horsepower and displacement",
+      "Regression model training and evaluation",
+      "Clean notebook workflow"
+    ],
+    "datasetInfo": "Auto-MPG dataset."
+  },
+  {
+    "id": "portfolio-website",
+    "title": "Personal Portfolio Website",
+    "category": "Full-Stack",
+    "shortDescription": "This website: a multi-page React + TypeScript portfolio with a FastAPI backend for projects, experience and a contact form that emails me.",
+    "fullDescription": "Full-stack portfolio built with React, TypeScript, Vite and Tailwind on the frontend and FastAPI + SQLModel on the backend. Projects and experience can be edited through the API, the contact form stores messages and sends email, and the site falls back to bundled data if the backend is offline.",
+    "image": "/images/portfolio-website.jpg",
+    "techStack": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "FastAPI",
+      "SQLModel"
+    ],
+    "githubUrl": "https://github.com/hamzamunirml/MY-Portfolio",
+    "liveUrl": "https://portfolio-gamma-rouge-bqnfi87kp4.vercel.app",
+    "metrics": [
+      {
+        "label": "Pages",
+        "value": "5"
+      },
+      {
+        "label": "Frontend",
+        "value": "React + TS"
+      },
+      {
+        "label": "Backend",
+        "value": "FastAPI"
+      }
+    ],
+    "architectureHighlights": [
+      "Multi-page React Router layout with dark/light theme",
+      "FastAPI + SQLModel API for projects, experience and contact",
+      "Bundled JSON fallback keeps the site working if the API is offline"
+    ],
+    "datasetInfo": null
+  }
+]

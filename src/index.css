@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 30px -5px rgba(30, 41, 59, 0.05), 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.dark .glass-card {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.35);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px -10px rgba(37, 99, 235, 0.12);
+}
+
+.dark .glass-card-hover:hover {
+  box-shadow: 0 20px 40px -10px rgba(99, 102, 241, 0.2);
+}
+
+.bg-blob {
+  background: radial-gradient(circle at 50% 50%, #dbeafe 0%, #ede9fe 100%);
+  filter: blur(90px);
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.dark .bg-blob {
+  background: radial-gradient(circle at 50% 50%, rgba(30, 58, 138, 0.35) 0%, rgba(67, 56, 202, 0.2) 100%);
+  filter: blur(100px);
+}
