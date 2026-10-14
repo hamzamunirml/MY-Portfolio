@@ -4,7 +4,7 @@ Full-stack personal portfolio: a React/TypeScript frontend and a FastAPI
 backend that serves the Projects and Experience data and handles the
 Contact form.
 
-**Live:** _add your Vercel URL here once deployed_
+**Live:** https://myportfolio-dzljcj79l-hm-40e7.vercel.app/
 
 ## Structure
 
